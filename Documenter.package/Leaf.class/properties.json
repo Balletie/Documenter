@@ -1,0 +1,14 @@
+{
+	"category" : "Documenter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "Leaf",
+	"pools" : [
+		 ],
+	"super" : "HtmlElement",
+	"type" : "normal" }

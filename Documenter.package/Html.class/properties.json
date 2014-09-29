@@ -1,0 +1,16 @@
+{
+	"category" : "Documenter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"docType",
+		"head",
+		"body" ],
+	"name" : "Html",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

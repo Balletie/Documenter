@@ -1,0 +1,15 @@
+{
+	"category" : "Documenter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"element",
+		"content" ],
+	"name" : "HtmlElement",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
