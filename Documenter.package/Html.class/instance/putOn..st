@@ -4,11 +4,11 @@ putOn: aStream
 		<< '<!DOCTYPE html'
 		<< docType;
 		<< $>;
-		cr;
+		lf;
 		<< '<html>';
-		cr;
+		lf;
 		<< head;
-		cr;
+		lf;
 		<< body;
-		cr;
+		lf;
 		<< '</html>'.
