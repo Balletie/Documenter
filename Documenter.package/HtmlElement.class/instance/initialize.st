@@ -2,4 +2,4 @@ as yet unclassified
 initialize
 
 	super initialize.
-	children := DoublyLinkedList new.
+	attributes := Dictionary new.
