@@ -1,0 +1,1 @@
+Represents an HTML element, with a tagname and attributes. Attributes are stored as key-value pairs in a Dictionary, a tag is just a plain string.

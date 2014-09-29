@@ -1,0 +1,1 @@
+Represents a HTML document with a document type declaration and head and body tags. The document can be written to a file.

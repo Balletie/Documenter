@@ -1,0 +1,1 @@
+Utility class which generates HTML element methods, so that I don't have to write all of those methods myself.

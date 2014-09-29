@@ -1,0 +1,1 @@
+A leaf element, i.e.: an element which can't contain children elements.

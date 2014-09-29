@@ -1,0 +1,1 @@
+This class can generate documentation out of methods and classes, outputting it as HTML.

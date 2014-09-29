@@ -1,0 +1,1 @@
+An element which can contain children. Children can really be any object, but they're meant to be either Strings or HTMLElement types.
