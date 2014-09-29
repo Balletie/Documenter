@@ -1,5 +1,5 @@
 as yet unclassified
-printOn: aStream 
+putOn: aStream 
 
 	aStream
 		nextPut: $<;

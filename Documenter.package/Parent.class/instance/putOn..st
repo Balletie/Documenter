@@ -1,9 +1,9 @@
 as yet unclassified
-printOn: aStream
+putOn: aStream
 
 	super printOn: aStream.
 	aStream nextPut: $>.
-	children do: [ :each | each isString ifTrue: [  ] ifFalse: [ each printOn: aStream ].].
+	children do: [ :each | each putOn: aStream].
 	aStream
 		nextPutAll: '</';
 		nextPutAll: tag;

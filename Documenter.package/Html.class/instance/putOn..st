@@ -1,10 +1,11 @@
 as yet unclassified
-printOn: aStream
+putOn: aStream
 	aStream 
 		nextPutAll: '<!DOCTYPE html';
 		nextPutAll: docType;
 		nextPut: $>;
-		nextPutAll: '<html>';
-		print: head;
-		print: body;
+		nextPutAll: '<html>'.
+	head putOn: aStream.
+	body putOn: aStream.
+	aStream
 		nextPutAll: '</html>'.

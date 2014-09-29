@@ -1,5 +1,10 @@
 as yet unclassified
-with: aString
+with: anObject
 
-	children add: aString.
+	anObject isBlock ifTrue: [
+		anObject cull: self.
+	];
+	ifFalse: [
+	children add: anObject.
+	].
 	^self
