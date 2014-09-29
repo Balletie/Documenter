@@ -1,3 +1,3 @@
-as yet unclassified
-h1: anObject
-	self h1 with: anObject.
+generated
+h1: anObjectOrBlock
+	self h1 with: anObjectOrBlock.

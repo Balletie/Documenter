@@ -1,3 +1,3 @@
-as yet unclassified
-a: anObject
-	self a with: anObject.
+generated
+a: anObjectOrBlock
+	self a with: anObjectOrBlock.
