@@ -1,9 +1,11 @@
 as yet unclassified
 printOn: aStream
 	aStream 
-		nextPutAll: '<!DOCTYPE hmtl';
+		nextPutAll: '<!DOCTYPE html';
 		nextPutAll: docType;
 		nextPut: $>;
+		cr;
+		nextPutAll: '<html>';
 		print: head;
-		print: body.
-	
+		print: body;
+		nextPutAll: '</html>'.
