@@ -1,3 +1,3 @@
 as yet unclassified
-a: aBlock
-	aBlock value: (children add: (Parent new elem: 'a')).
+a: anObject
+	self a with: anObject.
