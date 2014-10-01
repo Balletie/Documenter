@@ -1,6 +1,9 @@
 as yet unclassified
 initialize
 
+	leafs := #( 'area' 'base' 'br' 'col' 'embed' 'hr' 'img' 'input'
+			'keygen' 'link' 'menuitem' 'meta' 'param' 'source' 'track' 'wbr' ).
+
 	parents := #( 'a' 'abbr' 'address' 'article' 'aside' 'audio' 'b'
          'bdo' 'blockquote' 'body' 'button' 'canvas' 'caption' 'cite'
          'code' 'colgroup' 'command' 'datalist' 'dd' 'del' 'details'
