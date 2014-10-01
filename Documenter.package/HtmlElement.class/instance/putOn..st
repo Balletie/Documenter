@@ -1,5 +1,5 @@
 as yet unclassified
-putOn: aStream 
+putOn: aStream
 
 	aStream
 		<< $<;

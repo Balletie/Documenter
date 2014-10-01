@@ -5,6 +5,12 @@ documentClass: aClass
 		h1: aClass name;
 		p: [ :comment | comment
 			with: (aClass comment).
-		].
-	self documentSelectors: aClass.
-	self documentMethods: aClass.
+		];
+		h2: 'Class methods'.
+	self documentSelectors: aClass classSide.
+	self documentMethods: aClass classSide.
+
+	currentElement
+		h2: 'Instance methods'.
+	self documentSelectors: aClass instanceSide.
+	self documentMethods: aClass instanceSide.
