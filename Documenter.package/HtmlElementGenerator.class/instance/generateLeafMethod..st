@@ -1,5 +1,5 @@
 as yet unclassified
-generateLeafMethods: aTag
+generateLeafMethod: aTag
 
 	| aStream |
 	aStream := String new writeStream.
