@@ -3,7 +3,7 @@ documentSelectors: aClass
 
 	currentElement 
 		ul: [ :methodList |
-			aClass selectors do: [ :selector |
+			aClass selectors asSortedCollection do: [ :selector |
 				methodList
 					li a: [ :selLink | selLink
 						attribute: 'href' value: '#',selector;

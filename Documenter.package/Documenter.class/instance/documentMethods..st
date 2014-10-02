@@ -1,13 +1,14 @@
 as yet unclassified
 documentMethods: aClass
 
-	aClass selectorsAndMethodsDo: [ :sel :meth |
+	aClass selectors asSortedCollection do: [ :sel ||comment|
 		currentElement
 			h2: [ :name | name
 				attribute: 'id' value: sel;
 				with: sel ].
-			meth comment ifNotNil: [
+			comment := (aClass compiledMethodAt: sel) comment.
+			comment ifNotNil: [
 					currentElement
-						p: meth comment.
+						p: comment.
 			].
 	].
