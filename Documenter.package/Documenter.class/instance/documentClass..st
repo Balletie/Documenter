@@ -3,9 +3,15 @@ documentClass: aClass
 
 	currentElement
 		h1: aClass name;
-		p: [ :comment | comment
-			with: (aClass comment).
+		p: [ :info | info
+			with: 'Superclass: ';
+			span:	aClass superclass name;
+			br;
+			with:	'Subclasses: ';
+			span:	aClass subclasses asCommaStringAnd
 		];
+		h2: 'Class description';
+		p: aClass comment;
 		h2: 'Class methods'.
 	self documentSelectors: aClass classSide.
 	self documentMethods: aClass classSide.
@@ -13,4 +19,6 @@ documentClass: aClass
 	currentElement
 		h2: 'Instance methods'.
 	self documentSelectors: aClass instanceSide.
-	self documentMethods: aClass instanceSide.
+	self documentMethods: aClass instanceSide. 
+	currentElement
+		footer: 'Generated using the Documenter tool in Pharo'
