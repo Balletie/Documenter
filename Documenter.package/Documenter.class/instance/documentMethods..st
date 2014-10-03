@@ -1,6 +1,6 @@
-as yet unclassified
+documenters
 documentMethods: aClass
-
+	"Document all of the class and instance methods of this class."
 	aClass selectors asSortedCollection do: [ :sel ||meth comment|
 		currentElement
 			div: [ :method | method

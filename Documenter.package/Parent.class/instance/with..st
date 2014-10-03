@@ -1,4 +1,4 @@
-as yet unclassified
+modifying
 with: anObject
 
 	anObject isBlock ifTrue: [

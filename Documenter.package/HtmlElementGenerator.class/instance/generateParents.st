@@ -1,4 +1,4 @@
-as yet unclassified
+generators
 generateParents
 	"Generate the methods for creating parent tags"
 	parents do: [ :tagString |

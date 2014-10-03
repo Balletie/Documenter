@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize
 
 	leafs := #( 'area' 'base' 'br' 'col' 'embed' 'hr' 'img' 'input'

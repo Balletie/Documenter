@@ -1,6 +1,7 @@
-as yet unclassified
+documenters
 documentSelectors: aClass
-
+	"Document the selectors of this class, which link to the corresponding
+	method documentation."
 	currentElement 
 		ul: [ :methodList |
 			aClass selectors asSortedCollection do: [ :selector |

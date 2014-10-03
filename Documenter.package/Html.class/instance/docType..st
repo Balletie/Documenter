@@ -1,3 +1,3 @@
-as yet unclassified
+modifying
 docType: aString
 	docType := aString.

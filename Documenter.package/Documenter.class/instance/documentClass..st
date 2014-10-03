@@ -1,6 +1,9 @@
-as yet unclassified
+documenters
 documentClass: aClass
-
+	"Document a Class, generating an HTML file containing information such as:
+		class comment,
+		superclass and subclass(es),
+		class and instance methods (selector, parameters, comment)"
 	currentElement
 		h1: aClass name;
 		p: [ :info | info

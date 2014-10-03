@@ -1,3 +1,3 @@
-as yet unclassified
+modifying
 elem: aString
 	tag := aString.
