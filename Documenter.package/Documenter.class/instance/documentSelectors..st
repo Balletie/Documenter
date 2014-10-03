@@ -5,8 +5,12 @@ documentSelectors: aClass
 		ul: [ :methodList |
 			aClass selectors asSortedCollection do: [ :selector |
 				methodList
-					li code a: [ :selLink | selLink
-						attribute: 'href' value: '#',selector;
-						with: selector ].
+					li: [ :selectorItem | (selectorItem
+						attribute: 'class' value: 'selector';
+						code) a: [ :selLink | selLink
+							attribute: 'href' value: '#',selector;
+							with: selector
+						].
+					].
 			].
 		].
