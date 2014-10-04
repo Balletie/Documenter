@@ -11,17 +11,29 @@ documentClass: aClass
 			span:	aClass superclass name;
 			br;
 			with:	'Subclasses: ';
-			span:	aClass subclasses asCommaStringAnd
+			span:	(aClass subclasses
+								ifEmpty: '[None]'
+								ifNotEmpty: [ :subs | subs asCommaStringAnd ]);
+			br;
+			with: 'Instance variables: ';
+			span: (aClass instanceVariables
+								ifNil: '[None]'
+								ifNotNil: [ :vars | vars asCommaString ]).
 		];
 		h2: 'Class description';
-		p: aClass comment;
-		h2: 'Class methods'.
-	self documentSelectors: aClass classSide.
-	self documentMethods: aClass classSide.
+		p: aClass comment.
+	aClass classSide hasMethods ifTrue:[
+		currentElement
+			h2: 'Class methods'.
+		self documentSelectors: aClass classSide.
+		self documentMethods: aClass classSide.
+	].
 
-	currentElement
-		h2: 'Instance methods'.
-	self documentSelectors: aClass instanceSide.
-	self documentMethods: aClass instanceSide. 
+	aClass instanceSide hasMethods ifTrue:[
+		currentElement
+			h2: 'Instance methods'.
+		self documentSelectors: aClass instanceSide.
+		self documentMethods: aClass instanceSide.
+	].
 	currentElement
 		footer: 'Generated using the Documenter tool in Pharo'
