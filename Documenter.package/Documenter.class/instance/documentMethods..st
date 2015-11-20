@@ -10,7 +10,7 @@ documentMethods: aClass
 					attribute: 'class' value: 'selector';
 					with: sel ].
 
-				meth := (aClass compiledMethodAt: sel).
+				meth := aClass>>sel.
 				meth numArgs == 0 ifFalse: [
 				method
 					span: 'Parameters: ';
