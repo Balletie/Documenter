@@ -21,8 +21,7 @@ documentMethods: aClass
 				].
 				comment := meth comment.
 				comment ifNotNil: [
-						method
-							p: comment.
+					method p: comment.
 				].
 			].
 	].
